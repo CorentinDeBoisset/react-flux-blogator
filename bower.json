@@ -1,0 +1,19 @@
+{
+  "name": "react-isomorphic",
+  "description": "React Isomorphic",
+  "authors": [
+    "Corentin de Boisset"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reflex-grid": "~1.0.7",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
