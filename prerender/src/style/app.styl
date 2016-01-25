@@ -1,0 +1,98 @@
+// @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@require('grid.css')
+
+color1 = #f1f1f1
+color2 = #666
+color3 = #999
+color4 = #fbad18
+
+*
+  box-sizing: border-box;
+
+body
+  background: color1;
+  color: color2
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 200
+  min-width: 280px
+
+a
+  color: color2
+  text-decoration: none
+  font-weight: 700
+
+.main-container
+  width: 1280px
+  margin: auto
+  @media screen and (max-width: 479px)
+    width: 280px
+  @media screen and (min-width: 479px) and  (max-width: 768px)
+    width: 440px
+  @media screen and (min-width: 768px) and (max-width: 960px)
+    width: 768px
+  @media screen and (min-width: 960px) and (max-width: 1300px)
+    width: 960px
+
+.header
+  margin-top: 140px
+
+.header__section
+  margin: 0 1em 0 0
+  display: inline-block
+  &--title
+    text-transform: uppercase;
+
+.header__link
+  color: color2
+  font-weight: 300
+  &--title
+    font-size: 1.5em;
+    font-weight: 100
+    letter-spacing: 0.2em
+
+.post__img
+  position: relative;
+  &:before
+    display: block
+    content: ""
+    width: 100%
+    padding-top: 40%;
+  > .content
+    overflow: hidden
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-size: cover
+    background-position: center
+
+
+.post
+  background: #fff
+  margin-bottom: 4em
+  padding-bottom: 3em
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15)
+
+.post__metaData
+  font-weight: 400
+  color: color3
+  text-align: center
+  font-size: 1.3em
+
+.post__title
+  font-size: 2.7em
+  text-align: center
+  margin-top: 0.2em
+  font-weight: 100
+  a
+    font-weight: 100
+    &:hover
+      color: color3
+
+.post__authorDetails
+  text-align: center
+
+.post__text
+  font-size: 1.4em
+  line-height: 1.6em
